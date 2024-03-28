@@ -84,7 +84,7 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0(@types/node@20.11.30)(happy-dom@14.3.9)(sass@1.72.0)
 
-  apps/web:
+  apps/website:
     dependencies:
       nuxt:
         specifier: ^3.11.1
