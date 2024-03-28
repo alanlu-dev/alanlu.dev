@@ -1,3 +1,3 @@
-# @alanlu-dev/monorepo
+# @alanlu-dev/alanlu-dev
 
-A monorepo starter template.
+alanlu-dev website.

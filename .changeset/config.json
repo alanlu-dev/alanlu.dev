@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "alanlu-dev/monorepo"
+      "repo": "alanlu-dev/alanlu-dev"
     }
   ],
   "commit": false,

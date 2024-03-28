@@ -1,17 +1,17 @@
 {
-  "name": "@alanlu-dev/monorepo",
+  "name": "@alanlu-dev/alanlu-dev",
   "type": "commonjs",
   "private": true,
   "packageManager": "pnpm@8.15.5",
-  "description": "A monorepo starter template.",
+  "description": "alanlu-dev website.",
   "author": "Alan Lu <hi@alanlu.dev> (https://github.com/alanlu-zyl)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alanlu-dev/monorepo.git"
+    "url": "https://github.com/alanlu-dev/alanlu-dev.git"
   },
   "bugs": {
-    "url": "https://github.com/alanlu-dev/monorepo/issues"
+    "url": "https://github.com/alanlu-dev/alanlu-dev/issues"
   },
   "engines": {
     "node": ">=20.11.1",
