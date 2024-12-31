@@ -4,30 +4,35 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build:clean": "npx rimraf --glob ./.output",
+    "clean:build": "npx rimraf --glob ./.output",
     "build": "nuxt build",
     "dev": "nuxt dev --dotenv .env",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "cleanup": "nuxt cleanup",
     "app:prepare": "nuxt prepare",
-    "lint:eslint": "eslint --fix .",
-    "lint:prettier": "prettier --ignore-path ../../.prettierignore --write .",
-    "lint": "pnpm lint:eslint && pnpm lint:prettier",
-    "typecheck": "vue-tsc --noEmit"
+    "format": "prettier --check . --ignore-path ../../.prettierignore",
+    "lint": "eslint",
+    "typecheck": "vue-tsc --noEmit",
+    "k6": "k6 run k6.mjs",
+    "node:dev": "node -r dotenv/config .output/server/index.mjs",
+    "node:prod": "node -r dotenv/config .output/server/index.mjs dotenv_config_path=.env.production",
+    "pm2:dev": "pm2 start .output/server/index.mjs --name nuxt-fast --node-args='-r dotenv/config'",
+    "pm2:config:dev": "pm2 start ecosystem.config.js",
+    "pm2:config:prod": "pm2 start ecosystem.config.js --env production",
+    "docker:nginx": "docker build -t fast-nginx .",
+    "docker:nginx:run": "docker run -d -p 80:80 fast-nginx"
   },
   "dependencies": {
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "@alanlu-dev/eslint-config-base": "^1.0.0",
-    "@alanlu-dev/mastercss-config": "^1.0.1",
-    "@alanlu-dev/mastercss-helpers": "^1.0.1",
-    "@alanlu-dev/types": "^1.0.0",
-    "@master/css.nuxt": "2.0.0-rc.26",
-    "@master/css.vue": "2.0.0-rc.26",
-    "nuxt": "^3.12.4",
-    "vue-tsc": "^2.0.7"
+    "@alanlu-dev/mastercss-config": "^1.0.14",
+    "@alanlu-dev/mastercss-helpers": "^1.0.14",
+    "@alanlu-dev/types": "^1.0.12",
+    "@master/css.nuxt": "2.0.0-rc.47",
+    "@master/css.vue": "2.0.0-rc.47",
+    "nuxt": "^3.15.0",
+    "vue-tsc": "^2.2.0"
   }
 }

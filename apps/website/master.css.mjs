@@ -1,6 +1,3 @@
-import config from '@alanlu-dev/mastercss-config'
+import config from './app/master.css.mjs'
 
-/** @type {import('@master/css').Config} */
-export default {
-  extends: [config],
-}
+export default config
