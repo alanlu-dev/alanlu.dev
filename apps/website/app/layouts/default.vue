@@ -27,7 +27,7 @@
 
     <footer>
       <div class="max-w:screen-lg mx:auto p:4x t:center">
-        <p>© 2024 Alan Lu. All rights reserved.</p>
+        <p>© 2024-{{ new Date().getFullYear() }} <a class="link" href="https://github.com/alanlu-zyl" target="_blank">Alan Lu</a>. All rights reserved.</p>
       </div>
     </footer>
   </div>
