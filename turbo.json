@@ -28,11 +28,11 @@
       "dependsOn": ["build", "test", "lint"]
     },
     "format": {
-      "outputs": [".cache/.prettiercache"],
+      "outputs": [".cache/.formatcache"],
       "outputLogs": "new-only"
     },
     "lint": {
-      "outputs": [".cache/.eslintcache"]
+      "outputs": [".cache/.lintcache"]
     },
     "typecheck": {
       "outputs": [".cache/tsbuildinfo.json"]

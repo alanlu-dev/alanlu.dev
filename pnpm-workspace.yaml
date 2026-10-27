@@ -1,3 +1,32 @@
 packages:
   - 'apps/**'
   - 'packages/**'
+  - '!**/.output/**'
+
+# The project intentionally tracks the newest Vue/Nuxt releases.
+minimumReleaseAge: 0
+
+autoInstallPeers: true
+
+publicHoistPattern:
+  - '*eslint*'
+  - '*prettier*'
+  - '*stylelint*'
+  - '*markdownlint*'
+  - '*commitlint*'
+  - '*playwright*'
+  - czg
+  - lint-staged
+  - sass
+  - 'postcss*'
+  - '@master/*'
+
+# Dependencies whose install scripts are trusted in this workspace.
+allowBuilds:
+  '@parcel/watcher': true
+  # cspell:ignore esbuild
+  esbuild: true
+
+# The root prepare script runs Nuxt's prepare task; pnpm's automatic
+# pre-script install would otherwise recurse into the root install lifecycle.
+verifyDepsBeforeRun: false
