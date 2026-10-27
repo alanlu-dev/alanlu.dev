@@ -1,5 +1,11 @@
 # @alanlu-dev/website
 
+## 0.0.3
+
+### Patch Changes
+
+- [#9](https://github.com/alanlu-dev/alanlu.dev/pull/9) [`d06dbf3`](https://github.com/alanlu-dev/alanlu.dev/commit/d06dbf3226d03939db44f78d84b2aeea8115beba) Thanks [@alanlu-tw](https://github.com/alanlu-tw)! - chore(deps): upgrade Vue/Nuxt stack and workflows
+
 ## 0.0.2
 
 ### Patch Changes
