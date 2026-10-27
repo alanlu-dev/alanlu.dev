@@ -24,7 +24,7 @@
     "docker:nginx:run": "docker run -d -p 80:80 fast-nginx"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "vue": "^3.5.18"
   },
   "devDependencies": {
     "@alanlu-dev/mastercss-config": "^1.0.14",
@@ -32,7 +32,7 @@
     "@alanlu-dev/types": "^1.0.12",
     "@master/css.nuxt": "2.0.0-rc.47",
     "@master/css.vue": "2.0.0-rc.47",
-    "nuxt": "^3.15.0",
+    "nuxt": "^3.15.4",
     "vue-tsc": "^2.2.0"
   }
 }
