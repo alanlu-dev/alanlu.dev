@@ -8,11 +8,9 @@ useHead({
   },
   script: [
     {
-      'src': 'https://plausible.alanlu.dev/js/script.file-downloads.hash.outbound-links.pageview-props.tagged-events.js',
-      'data-domain': 'alanlu.dev',
-      'defer': true,
+      src: 'https://rybbit.alanlu.dev/api/script.js?siteId=1',
+      defer: true,
     },
-    { children: 'window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }' },
   ],
 })
 
